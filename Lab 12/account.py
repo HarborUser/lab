@@ -7,9 +7,10 @@ class Account():
     def deposit(self, amount):
         if amount<0 or amount == 0:
             return False
-
         if amount>0
             self.__account_balance += amount
+            return True
+
     def withdrew(self, amount):
         if amount < 0 or amount == 0 or amount > self.__account_balance:
             return False
@@ -18,9 +19,9 @@ class Account():
             return True
 
 
-    def get_balance(self,amount):
+    def get_balance(self):
         return self.__account_balance
-    def get_name(self,amount):
+    def get_name(self):
         return self.__account_name
 
 
