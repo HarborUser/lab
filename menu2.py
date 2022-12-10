@@ -517,7 +517,14 @@ class Ui_menu_stage(object):
 
 
         else:
-            self.fixer.setText("Not possible")
+            if self.checkBox.isChecked() == False and self.spinBox.value() == 0:
+                self.fixer.setText("Not possible")
+            if self.checkBox_2.isChecked() == False and self.spinBox_2.value() == 0:
+                self.fixer.setText("Not possible")
+            if self.checkBox_3.isChecked() == False and self.spinBox_3.value() == 0:
+                self.fixer.setText("Not possible")
+            if self.checkBox_4.isChecked() == False and self.spinBox_4.value() == 0:
+                self.fixer.setText("Not possible")
     def setupUi(self, menu_stage):
         menu_stage.setObjectName("menu_stage")
         menu_stage.setEnabled(True)
